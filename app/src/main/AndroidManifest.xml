@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/quizztory_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/quizztory_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Quizztory"
+        tools:targetApi="31"
+        android:hardwareAccelerated="true">
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/appID"/>
+
+        <activity
+            android:name=".levels.HardScreen"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".levels.ModerateScreen"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".levels.EasyScreen"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".levels.DifficultyScreen"
+            android:screenOrientation="portrait"
+            android:hardwareAccelerated="true"
+            android:exported="false" />
+        <activity
+            android:name="dev.SplashScreen"
+            android:screenOrientation="portrait"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+    </application>
+
+</manifest>

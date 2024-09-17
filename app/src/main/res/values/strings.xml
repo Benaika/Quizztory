@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Quizztory</string>
+
+    <!-- CHOICES FOR QUESTIONS -->
+    <string name="choice_A">OPTION A</string>
+    <string name="choice_B">OPTION B</string>
+    <string name="choice_C">OPTION C</string>
+    <string name="choice_D">OPTION D</string>
+
+    <!-- DIFFICULTIES -->
+    <string name="easy">EASY LEVEL</string>
+    <string name="moderate">MODERATE LEVEL</string>
+    <string name="hard">HARD LEVEL</string>
+
+    <!-- SUBMIT BUTTON -->
+    <string name="btnSubmit">SUBMIT</string>
+
+    <string name="appID">"ca-app-pub-3628136569094851~1036820892"</string>
+    <string name="banner">"ca-app-pub-3628136569094851/5090534404"</string>
+    <string name="testID">"ca-app-pub-3940256099942544/6300978111"</string>
+
+</resources>

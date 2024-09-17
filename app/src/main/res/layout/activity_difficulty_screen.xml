@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main_bg"
+    android:gravity="center"
+    tools:context=".levels.DifficultyScreen">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please Select Difficulty Level"
+        android:layout_gravity="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/brown_orange"/>
+
+    <Button
+        android:id="@+id/btn_Easy"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:text="EASY"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/btn_Moderate"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:text="MODERATE"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/btn_Hard"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:text="HARD"
+        android:textSize="20dp"/>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintTop_toTopOf="parent"
+        ads:layout_constraintEnd_toEndOf="parent">
+    </com.google.android.gms.ads.AdView>
+
+</LinearLayout>
